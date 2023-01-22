@@ -1,0 +1,19 @@
+{
+  "name": "basic-js-course",
+  "version": "1.0.0",
+  "description": "Learn JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TEO-NTF/basic-js-course.git"
+  },
+  "author": "TEO-NFT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TEO-NTF/basic-js-course/issues"
+  },
+  "homepage": "https://github.com/TEO-NTF/basic-js-course#readme"
+}
