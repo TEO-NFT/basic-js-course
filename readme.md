@@ -45,10 +45,25 @@ The data types tell me what values will be supported by that variable.
 - bigint
 - symbol
 
+| Primitive data |  Description  | Example |
+| :-------- | :--------------------- | :------------------------------------------ |
+| number    | Integers and decimals  | 10 **or** 10.5                              |
+| string    | Chars Chain            | "Hi, World"                                 |
+| boolean   | Logical value          | true **or** false                           |
+| null      | Null value             | **null**                                    | 
+| undefined | Value not defined      | **undefined**                               |
+| bigint    | Numeric values which are too large  | **BigInt**("9007199254740991") |
+| symbol    | Object whose constructor returns symbol | **Symbol**("foo");         |
+
 ## Object Type
 
 - function
 - object
+
+| Primitive data |  Description  | Example |
+| :-------- | :--------------------------- | :------------------------------------ |
+| function  | Representation of a function | function add(){}                      |
+| object    | Representation of a object   | { name: "TEONFT" }                    |
 
 
 
