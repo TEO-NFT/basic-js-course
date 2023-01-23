@@ -485,7 +485,7 @@ let newProduct = new Product(
 
 ## Filter method
 
-The filter method consists of creating a new array from the original filtered elements.
+The **filter** method consists of creating a new array from the original filtered elements.
 
 ```javascript
 let products = [
@@ -504,9 +504,10 @@ let data = products.filter(function (product) {
 
 let data2 = products.filter((product) => product.price > 700);
 ```
+
 ## Map method
 
-The map method is immutable and consists of creating a new array from the original elements.
+The **map** method is immutable and consists of creating a new array from the original elements.
 
 ```javascript
 let products = [
@@ -520,9 +521,72 @@ let products = [
 ];
 
 let data = products.map(function (product) {
-  return product.name
+  return product.name;
 });
 
 let data2 = products.map((product) => product.name);
+```
 
+## Find Method
+
+The **find** method consists of finding the first element of an array that meets the specified condition.
+
+```javascript
+let products = [
+  { name: "Tablet android", price: 250 },
+  { name: "Lenovo laptop", price: 300 },
+  { name: "Apple ipad", price: 750 },
+  { name: "Asus TUF", price: 1000 },
+  { name: "Samsung Tab A7", price: 350 },
+  { name: "Acer Nitro 5", price: 1200 },
+  { name: "Dell i7", price: 750 },
+];
+
+let data = products.find(function (product) {
+  return product.name === "Apple ipad";
+});
+
+let data2 = products.find((product) => product.name === "Apple ipad");
+```
+
+## forEach Method
+
+The **forEach** method of arrays consists of executing a **callback function** for each of the iterated elements.
+
+```javascript
+let products = [
+  { name: "Tablet android", price: 250 },
+  { name: "Lenovo laptop", price: 300 },
+  { name: "Apple ipad", price: 750 },
+  { name: "Asus TUF", price: 1000 },
+  { name: "Samsung Tab A7", price: 350 },
+  { name: "Acer Nitro 5", price: 1200 },
+  { name: "Dell i7", price: 750 },
+];
+
+let data = products.forEach(function (product) {
+  console.log(product.name);
+});
+```
+
+## Some Method
+
+The method **some** consists of returning a logical value true if there is at least one element that meets the condition set in the function
+
+```javascript
+let products = [
+  { name: "Tablet android", price: 250 },
+  { name: "Lenovo laptop", price: 300 },
+  { name: "Apple ipad", price: 750 },
+  { name: "Asus TUF", price: 1000 },
+  { name: "Samsung Tab A7", price: 350 },
+  { name: "Acer Nitro 5", price: 1200 },
+  { name: "Dell i7", price: 750 },
+];
+
+let data = products.some(function (product) {
+  return product.name === "Apple ipad";
+});
+
+let data2 = products.some((p) => p.name === "Acer Nitro 5");
 ```
