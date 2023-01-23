@@ -152,7 +152,7 @@ Environment where global variables can be accessed from anywhere in our program.
 
 Are those that are declared within the code blocks or functions.
 
-# Coercion
+## Coercion
 
 Coercion consists of transforming from one data type to another of a variable.
 
@@ -171,7 +171,7 @@ Explicit coercion is the transformation of controlled data types
 
 | Coercion type |  Code    | Result   |
 | :-------- | :---------   | :------- |
-| Implicit  | 5 + "7"      |  "47"    |
+| Implicit  | 5 + "7"      |  "57"    |
 | Implicit  | 6 + true     |  7       |
 | Implicit  | true + true  |  2       |
 | Implicit  | false + 1    |  1       |
