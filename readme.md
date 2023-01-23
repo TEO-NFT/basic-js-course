@@ -65,6 +65,81 @@ The data types tell me what values will be supported by that variable.
 | function  | Representation of a function | function add(){}                      |
 | object    | Representation of a object   | { name: "TEONFT" }                    |
 
+## Functions 
+
+#### ¿ What is a function ?
+
+Functions allow us to create blocks of code which we can reuse when we need them. 
+
+- Functions receive parameters when we create them, when we call them we send them arguments, however functions can be created with or without parameters.
+
+- Functions can return values, but it is not obligatory
 
 
+## Define a function 
 
+```javascript
+
+function functionName() {
+
+}
+
+```
+
+## Call a function 
+
+```javascript
+
+functionName();
+
+```
+
+## Define a function with parameters
+
+```javascript
+
+function add(number_1,number_2) {
+  return number_1 + number_2
+}
+
+```
+
+## Call a function with arguments
+
+```javascript
+
+add(5,2);
+
+```
+
+## Declarative functions
+
+Use the reserved word **function** to declare the function
+
+Declarative functions are **hoisted**, this means that we can call the function before and then declare it
+
+```javascript
+
+add(2,5);
+
+function add(number_1,number_2) {
+  return number_1 + number_2
+}
+
+```
+
+## Expressive function
+
+Function will be stored in a variable.
+
+```javascript
+
+const greet = function(){
+  return "Hi"
+}
+
+greet()
+
+```
+
+Declarative functions are  not **hoisted**
