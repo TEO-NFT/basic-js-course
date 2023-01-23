@@ -427,3 +427,75 @@ while ( number <= 10 ){
 
 ```
 
+## Objects
+
+Structure that allows storing values by property-value through the syntax of braces **{}** and separated by commas.
+
+## Defining an object
+
+```javascript
+
+let product = {
+  name:"Piano Yamaha",
+  description:"Piano with 88 semi-weighted keys",
+  category:"88 Key",
+  price:1700
+}
+
+```
+
+## Access the values of an object
+
+```javascript
+
+let product = {
+  name:"Piano Yamaha",
+  description:"Piano with 88 semi-weighted keys",
+  category:"88 Key",
+  price:1700
+}
+
+product["price"]
+product.price
+
+```
+
+## Add and remove properties of an object
+
+```javascript
+
+let product = {
+  name:"Piano Yamaha",
+  description:"Piano with 88 semi-weighted keys",
+  category:"88 Key",
+  price:1700
+}
+
+// Add
+
+product["color"] = "white"
+product.color = "white"
+
+// Remove
+
+delete product["category"]
+delete product.category
+
+```
+
+## Constructor function
+
+```javascript
+
+function Product(name,description,category,price){
+  this.name = name;
+  this.description = description;
+  this.category = category;
+  this.price = price;
+}
+
+let newProduct = new Product("Piano Casio","Piano with 61 semi-weighted keys","61 Keys",900);
+
+```
+
+
