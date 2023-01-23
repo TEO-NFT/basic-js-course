@@ -219,7 +219,7 @@ The concatenation operator consists of joining two or more strings.
 | :-------- | :----------- | :----------- |
 | +  | "Hi" + " World"     |  "Hi World"  |
 
-## Icrement and decrement operator
+## Increment and decrement operator
 
 The increment **(++)** and decrement **(--)** operator consists of increasing or decreasing a variable. 
 
@@ -266,15 +266,15 @@ A comparison operator compares two or more values and returns a logical value **
 
 There are 2 types
 
-- Quality by value **==**
-- equality by value and data type **===**
+- Quality by value **(==)**
+- equality by value and data type **(===)**
 
 ## Inequality operators
 
 There are 2 types
 
-- Quality by value **!=**
-- equality by value and data type **!==**
+- Quality by value **(!=)**
+- equality by value and data type **(!==)**
 
 ## Major and minor operators
 
@@ -289,7 +289,7 @@ There are 4 types
 
 Logical operators compare two or more expressions and return a logical value **true/false**
 
-## **AND** operator **(&&)** 
+## **AND** operator **( && )** 
 
 | Exp 1 |  Exp 2   | Result  |
 | :---- | :------- | :------ |
@@ -298,7 +298,7 @@ Logical operators compare two or more expressions and return a logical value **t
 | false | true     |  false  |
 | false | false    |  false  |
 
-## **OR** operator **(||)** 
+## **OR** operator **( || )** 
 
 | Exp 1 |  Exp 2   | Result  |
 | :---- | :------- | :------ |
@@ -307,7 +307,7 @@ Logical operators compare two or more expressions and return a logical value **t
 | false | true     |  true   |
 | false | false    |  false  |
 
-## **NOT** operator **(!)** 
+## **NOT** operator **( ! )** 
 
 | Exp 1  |  Result  |
 | :----  | :------- | 
