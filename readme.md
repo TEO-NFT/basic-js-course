@@ -1,5 +1,10 @@
 # Basic JavaScript Course
 
+## Learn JS
+
+- [Keywords to create variables](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#keywords-to-create-variables)
+
+
 #### What is a variable?
 
 It's a space in memory where you can store information depending on the type of data supported by the language.
