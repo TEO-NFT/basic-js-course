@@ -1,15 +1,15 @@
-## Basic JavaScript Course
+# Basic JavaScript Course
 
-#### ¿ What is a variable ?
+#### What is a variable?
 
 It's a space in memory where you can store information depending on the type of data supported by the language.
 
-#### ¿ What is the difference between declaring and initializing a variable ? 
+#### What is the difference between declaring and initializing a variable? 
 
 Declare a variable create a variable without giving it an initial value.
 Initialize a variable is to give a value to that variable.
 
-### ¿ How to know the type of data of a value?
+### How to know the type of data of a value?
 
 We have to use the reserved word typeof
 
@@ -67,7 +67,7 @@ The data types tell me what values will be supported by that variable.
 
 ## Functions 
 
-#### ¿ What is a function ?
+#### What is a function?
 
 Functions allow us to create blocks of code which we can reuse when we need them. 
 
@@ -159,13 +159,13 @@ Coercion consists of transforming from one data type to another of a variable.
 - Implicit
 - Explicit
 
-#### ¿ What is implicit coercion ?
+#### What is implicit coercion?
 
 Implicit coercion consists in the transformation of data types using JavaScript Help.
 
-#### ¿ What is explicit coercion ?
+#### What is explicit coercion?
 
-Explicit coercion is the transformation of controlled data types
+Explicit coercion is the transformation of controlled data types.
 
 ## Example
 
@@ -178,3 +178,140 @@ Explicit coercion is the transformation of controlled data types
 | Explicit  | Number("77") |  77      |
 | Explicit  | Boolean(1)   |  true    |
 | Explicit  | String(97)   |  "97"    |
+
+## Truthy and Falsy Values
+
+Truthy and falsy values are true and false values when a coercion of any type is performed on boolean.
+
+## Operators 
+
+There are different types of operators.
+
+- Arthmetical operators
+- Concatenation operator
+- Icrement and decrement operator
+- Assignment operators
+- Combined assignment operators
+- Comparison operators
+- Equality operators
+- Inequality operators
+- Major and minor operators
+- logical operators
+
+#### What are arithmetic operators?
+
+The arithmetic operators are used to perform mathematical operations.
+
+| Operator  |  Description    |  
+| :-------- | :---------      |  
+| +         | Addition        |      
+| -         | Subtraction     |      
+| *         | Multiplication  |       
+| /         | Division        |       
+| %         | Remainder       |
+| **        | Power           |
+
+#### What is concatenation operator?
+
+The concatenation operator consists of joining two or more strings.
+
+| Operator  |  Code        | Result       |
+| :-------- | :----------- | :----------- |
+| +  | "Hi" + " World"     |  "Hi World"  |
+
+## Icrement and decrement operator
+
+The increment **(++)** and decrement **(--)** operator consists of increasing or decreasing a variable. 
+
+The behavior will be different depending on where the operator is.
+
+**let counter = 6**
+
+| Operator  |  Code        | Result                    |
+| :-------- | :----------- | :------------------------ |
+| ++  | counter++          | console.log(counter++)  6 |
+| ++  | ++counter          | console.log(++counter)  7 |
+
+#### What are assignment operators
+
+Consists of assigning a value to a variable.
+
+```javascript
+
+let sayHi = "Hi";
+
+```
+
+## Combined assignment
+
+```javascript
+
+let counter = 1
+
+counter = counter + 1;
+
+counter+= 1;
+counter-= 3;
+counter*= 5;
+counter/= 7;
+counter+=counter;
+
+```
+
+#### What are comparison operators?
+
+A comparison operator compares two or more values and returns a logical value **true/false**
+
+## Equality operators
+
+There are 2 types
+
+- Quality by value **==**
+- equality by value and data type **===**
+
+## Inequality operators
+
+There are 2 types
+
+- Quality by value **!=**
+- equality by value and data type **!==**
+
+## Major and minor operators
+
+There are 4 types
+
+- 4 < 7   **true**
+- 7 > 3   **true**
+- 2 <= 1  **false**
+- 3 >= 4  **false**
+
+#### What are logical operators?
+
+Logical operators compare two or more expressions and return a logical value **true/false**
+
+## **AND** operator **(&&)** 
+
+| Exp 1 |  Exp 2   | Result  |
+| :---- | :------- | :------ |
+| true  | true     |  true   |
+| true  | false    |  false  |
+| false | true     |  false  |
+| false | false    |  false  |
+
+## **OR** operator **(||)** 
+
+| Exp 1 |  Exp 2   | Result  |
+| :---- | :------- | :------ |
+| true  | true     |  true   |
+| true  | false    |  true   |
+| false | true     |  true   |
+| false | false    |  false  |
+
+## **NOT** operator **(!)** 
+
+| Exp 1  |  Result  |
+| :----  | :------- | 
+| !true  | false    |  
+| !false | true     |  
+
+## Conditionals
