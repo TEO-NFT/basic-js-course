@@ -143,3 +143,38 @@ greet()
 ```
 
 Declarative functions are  not **hoisted**
+
+## Global Scope 
+
+Environment where global variables can be accessed from anywhere in our program.
+
+## Local Scope 
+
+Are those that are declared within the code blocks or functions.
+
+# Coercion
+
+Coercion consists of transforming from one data type to another of a variable.
+
+- Implicit
+- Explicit
+
+#### ¿ What is implicit coercion ?
+
+Implicit coercion consists in the transformation of data types using JavaScript Help.
+
+#### ¿ What is explicit coercion ?
+
+Explicit coercion is the transformation of controlled data types
+
+## Example
+
+| Coercion type |  Code    | Result   |
+| :-------- | :---------   | :------- |
+| Implicit  | 5 + "7"      |  "47"    |
+| Implicit  | 6 + true     |  7       |
+| Implicit  | true + true  |  2       |
+| Implicit  | false + 1    |  1       |
+| Explicit  | Number("77") |  77      |
+| Explicit  | Boolean(1)   |  true    |
+| Explicit  | String(97)   |  "97"    |
