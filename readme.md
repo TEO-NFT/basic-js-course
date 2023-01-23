@@ -323,29 +323,26 @@ if (color == 0) {
   msg = "Color is blue";
 }
 ```
+
 ## Ternary operator
 
 ```javascript
-
-function isEvenOrOdd(n){
-  return n % 2 === 0 ? "Is Even" : "Is odd"
+function isEvenOrOdd(n) {
+  return n % 2 === 0 ? "Is Even" : "Is odd";
 }
-
 ```
 
-## Array 
+## Array
 
 Structure that allows storing a series of data located by indexes and separated by commas.
 
 ```javascript
-
-let numbers = [1,2,3,4,5,6,7,8,9]
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // Access an element of the array
 
-numbers[6] 
-//=> 7 
-
+numbers[6];
+//=> 7
 ```
 
 ## Array methods
@@ -376,32 +373,25 @@ The **shift** method extracts the element from the beginning of the original arr
 Control structure that allows you to perform one or more instructions as long as a condition is true.
 
 ```javascript
-
 // Prints the numbers from 1 to 10
 
-for(let i = 1; i<=10; i++){
+for (let i = 1; i <= 10; i++) {
   console.log(i);
-  
 }
-
 ```
 
 ## Loop in an Array
 
 ```javascript
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-let numbers = [1,2,3,4,5,6,7,8,9]
-
-for(let i = 0; i<numbers.length; i++){
+for (let i = 0; i < numbers.length; i++) {
   console.log(numbers[i]);
-  
 }
 
-for ( var number of numbers){
+for (var number of numbers) {
   console.log(number);
 }
-
-
 ```
 
 ## While Loop
@@ -413,10 +403,9 @@ Terminates the execution when the expression is false
 ## Example
 
 ```javascript
-
 let number = 1;
 
-while ( number <= 10 ){
+while (number <= 10) {
   console.log(number);
   number++;
 }
@@ -424,7 +413,6 @@ while ( number <= 10 ){
 // 11 <= 10  = false
 
 // When number is 11 the expression is false, then loop ends
-
 ```
 
 ## Objects
@@ -434,68 +422,107 @@ Structure that allows storing values by property-value through the syntax of bra
 ## Defining an object
 
 ```javascript
-
 let product = {
-  name:"Piano Yamaha",
-  description:"Piano with 88 semi-weighted keys",
-  category:"88 Key",
-  price:1700
-}
-
+  name: "Piano Yamaha",
+  description: "Piano with 88 semi-weighted keys",
+  category: "88 Key",
+  price: 1700,
+};
 ```
 
 ## Access the values of an object
 
 ```javascript
-
 let product = {
-  name:"Piano Yamaha",
-  description:"Piano with 88 semi-weighted keys",
-  category:"88 Key",
-  price:1700
-}
+  name: "Piano Yamaha",
+  description: "Piano with 88 semi-weighted keys",
+  category: "88 Key",
+  price: 1700,
+};
 
-product["price"]
-product.price
-
+product["price"];
+product.price;
 ```
 
 ## Add and remove properties of an object
 
 ```javascript
-
 let product = {
-  name:"Piano Yamaha",
-  description:"Piano with 88 semi-weighted keys",
-  category:"88 Key",
-  price:1700
-}
+  name: "Piano Yamaha",
+  description: "Piano with 88 semi-weighted keys",
+  category: "88 Key",
+  price: 1700,
+};
 
 // Add
 
-product["color"] = "white"
-product.color = "white"
+product["color"] = "white";
+product.color = "white";
 
 // Remove
 
-delete product["category"]
-delete product.category
-
+delete product["category"];
+delete product.category;
 ```
 
 ## Constructor function
 
 ```javascript
-
-function Product(name,description,category,price){
+function Product(name, description, category, price) {
   this.name = name;
   this.description = description;
   this.category = category;
   this.price = price;
 }
 
-let newProduct = new Product("Piano Casio","Piano with 61 semi-weighted keys","61 Keys",900);
-
+let newProduct = new Product(
+  "Piano Casio",
+  "Piano with 61 semi-weighted keys",
+  "61 Keys",
+  900
+);
 ```
 
+## Filter method
 
+The filter method consists of creating a new array from the original filtered elements.
+
+```javascript
+let products = [
+  { name: "Tablet android", price: 250 },
+  { name: "Lenovo laptop", price: 300 },
+  { name: "Apple ipad", price: 750 },
+  { name: "Asus TUF", price: 1000 },
+  { name: "Samsung Tab A7", price: 350 },
+  { name: "Acer Nitro 5", price: 1200 },
+  { name: "Dell i7", price: 750 },
+];
+
+let data = products.filter(function (product) {
+  return product.price > 400;
+});
+
+let data2 = products.filter((product) => product.price > 700);
+```
+## Map method
+
+The map method is immutable and consists of creating a new array from the original elements.
+
+```javascript
+let products = [
+  { name: "Tablet android", price: 250 },
+  { name: "Lenovo laptop", price: 300 },
+  { name: "Apple ipad", price: 750 },
+  { name: "Asus TUF", price: 1000 },
+  { name: "Samsung Tab A7", price: 350 },
+  { name: "Acer Nitro 5", price: 1200 },
+  { name: "Dell i7", price: 750 },
+];
+
+let data = products.map(function (product) {
+  return product.name
+});
+
+let data2 = products.map((product) => product.name);
+
+```
