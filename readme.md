@@ -43,6 +43,7 @@
 - [Find](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#find-method)
 - [forEach](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#foreach-method)
 - [Some](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#some-method)
+- [Closure](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#closure)
 
 #### What is a variable?
 
@@ -633,4 +634,23 @@ let data = products.some(function (product) {
 });
 
 let data2 = products.some((p) => p.name === "Acer Nitro 5");
+```
+
+## Closure
+
+Is a form of lexical scoping used to preserve variables from the outer scope of a function in the inner scope of a function.
+
+ways to create closure in JavaScript, and in the following code block, you can see an example you may find yourself using.
+
+```javascript
+function buildGreeting(message) {
+  return function (audience) {
+    return message + " " + audience;
+  };
+}
+let greeting1 = buildGreeting("Hi");
+let greeting2 = buildGreeting("Hello");
+
+console.log(greeting1("User")); // Hi User
+console.log(greeting2("World")); // Hello World
 ```
