@@ -44,6 +44,8 @@
 - [forEach](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#foreach-method)
 - [Some](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#some-method)
 - [Closure](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#closure)
+- [ES6](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#es6)
+- [Arrow function](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#arrow-function)
 
 #### What is a variable?
 
@@ -653,4 +655,28 @@ let greeting2 = buildGreeting("Hello");
 
 console.log(greeting1("User")); // Hi User
 console.log(greeting2("World")); // Hello World
+```
+
+## ES6
+
+ECMAScript 6 (ES6 or ES2015) several new features were released that gave great power to the language, two of these are a new way of declaring variables with let and const, and arrow functions.
+
+## Arrow function
+
+An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage:
+
+- Arrow functions don't have their own bindings to this, arguments, or super, and should not be used as methods.
+- Arrow functions cannot be used as constructors. Calling them with new throws a TypeError. They also don't have access to the new.target keyword.
+- Arrow functions cannot use yield within their body and cannot be created as generator functions.
+
+```javascript
+
+const add = (a,b) => a + b;
+const sub = (a,b) => a - b;
+
+const cleanData = () => {
+  let data = [];
+  return data;
+}
+
 ```

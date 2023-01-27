@@ -9,8 +9,10 @@ function moneyBox() {
   return countCoins;
 }
 
-const a1 = moneyBox();
+const saveCoin = moneyBox();
 
-a1(5);
-a1(7);
-a1(9);
+saveCoin(5);
+saveCoin(7);
+saveCoin(15);
+
+
