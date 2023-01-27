@@ -46,6 +46,10 @@
 - [Closure](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#closure)
 - [ES6](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#es6)
 - [Arrow function](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#arrow-function)
+- [Default params](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#default-params)
+- [Destructuring of objects](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#destructuring-of-objects)
+- [Destructuring of arrays](https://github.com/TEO-NFT/basic-js-course/blob/main/readme.md#destructuring-of-arrays)
+
 
 #### What is a variable?
 
@@ -670,13 +674,58 @@ An arrow function expression is a compact alternative to a traditional function 
 - Arrow functions cannot use yield within their body and cannot be created as generator functions.
 
 ```javascript
-
-const add = (a,b) => a + b;
-const sub = (a,b) => a - b;
+const add = (a, b) => a + b;
+const sub = (a, b) => a - b;
 
 const cleanData = () => {
   let data = [];
   return data;
-}
+};
+```
 
+## Default params
+
+Default params consist of setting a default value to the parameters of a function, to ensure that the code executes correctly in the event that the corresponding arguments are not set in the function invocation.
+
+```javascript
+const createUser = (name, age, country) => {
+  var name = name || "TEO";
+  var age = age || 25;
+  var country = country || "Dubai";
+
+  const user = {
+    name,
+    age,
+    country,
+  };
+
+  return user;
+};
+
+createUser();
+createUser((name = "Jose"), (age = 21), (country = "Colombia"));
+```
+
+## Destructuring of objects
+
+Object destructuring involves extracting the properties of an object into variables. Using the same name of the object's property with the following syntax:
+
+```javascript
+const user = {
+  name: "TEO",
+  age: 25,
+  country: "Dubai",
+};
+
+const { name, age, country } = user;
+```
+
+## Destructuring of arrays
+
+Array destructuring consists of extracting the values of an array into variables, using the same array position with a syntax similar to object destructuring.
+
+```javascript
+const numbers = [1, 2, 3, 4];
+
+const [n1, n2, n3] = numbers;
 ```
